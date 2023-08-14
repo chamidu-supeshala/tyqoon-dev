@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply w-full min-h-screen text-[#000000d9];
+
+    a {
+      @apply text-[#000000d9] transition duration-150;
+
+      &:hover {
+        @apply text-[#fb8811];
+      }
+    }
+
+    h1,
+    s h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      margin: 0;
+    }
+  }
+
+  ::selection,
+  ::-moz-selection {
+    @apply text-white;
+    background-color: #fb8811;
+  }
+}
+
+@layer components {
+  .tyqoon-container {
+    @apply px-1 sm:px-3 xl:px-4 xl:max-w-[1140px] mx-auto 2xl:max-w-[1332px];
+  }
+}
+
+@layer utilities {
+  .sticky {
+    position: sticky;
+    position: -webkit-sticky;
+  }
+
+  .bg-gradient-primary {
+    background: linear-gradient(270deg, #ff6009 0%, #ff8340 100%);
+  }
+
+  .bg-gradient-primary-1 {
+    background: linear-gradient(135deg, #ff5c02 0%, #ff7e41 100%);
+  }
+
+  .border-gradient-primary {
+    @include gradient-border(
+      linear-gradient(91.5deg, #fddc64 0.75%, #ff9e3d 51.47%, #fddc64 106.14%)
+    );
+  }
+
+  .border-gradient-secondary {
+    @include gradient-border(
+      linear-gradient(91.5deg, #ff05c9 0.75%, #00aeff 51.47%, #ff05c9 106.14%)
+    );
+  }
+
+  .border-rainbow {
+    @include gradient-border(
+      linear-gradient(
+        60deg,
+        #fd0134,
+        #f363f8,
+        #2361fe,
+        #01fefd,
+        #29f500,
+        #fac55e,
+        #fd0134,
+        #f363f8,
+        #2361fe,
+        #01fefd,
+        #29f500,
+        #fac55e
+      ),
+      3px
+    );
+  }
+
+  .border-rainbow-y {
+    @include gradient-border(
+      linear-gradient(
+        60deg,
+        #fd0134,
+        #f363f8,
+        #2361fe,
+        #01fefd,
+        #29f500,
+        #fac55e,
+        #fd0134,
+        #f363f8,
+        #2361fe,
+        #01fefd,
+        #29f500,
+        #fac55e
+      ),
+      3px 0
+    );
+  }
+
+  .shadow-secondary {
+    box-shadow: 0 0 20px -6px #fd27f8, 0 0 20px -6px #05aafe;
+  }
+
+  .shadow-product-category {
+    box-shadow: 0 0 4px #0000001f;
+  }
+
+  .shadow-search-category {
+    box-shadow: 0 0 0 2px #fb881133;
+  }
+
+  .text-rainbow {
+    background: linear-gradient(
+      to right,
+      #6666ff,
+      #0099ff,
+      #00ff00,
+      #ff3399,
+      #6666ff
+    );
+    background-size: 400% 100%;
+    background-clip: text;
+    color: transparent;
+    animation: backgroundFlow 6s ease-in-out infinite;
+  }
+
+  .login-bg {
+    background-image: linear-gradient(345deg, #267dff, #053987, #2270ff);
+  }
+
+  .active-btn-orange {
+    color: #fb8811;
+    background: #fef1e9;
+    border-bottom: 1px solid rgb(251, 136, 17);
+  }
+
+  .bg-gradient-radial {
+    background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+
+  .bg-gradient-progress {
+    background-image: linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.2) 75%,
+      transparent 75%,
+      transparent
+    );
+  }
+
+  .bg-size-15 {
+    background-size: 15%;
+  }
+
+  .bg-size-50 {
+    background-size: 50px 50px;
+  }
+
+  .orange-loader {
+    transform: rotate(45deg);
+    animation: orangeLoaderRotate 1.2s infinite linear;
+
+    i {
+      animation: orangeLoaderSpinMove 1s infinite linear alternate;
+
+      &:nth-child(2) {
+        animation-delay: 0.4s;
+      }
+
+      &:nth-child(3) {
+        animation-delay: 0.8s;
+      }
+
+      &:nth-child(4) {
+        animation-delay: 1.2s;
+      }
+    }
+  }
+}
+
+.bg-rainbow-animated {
+  padding: 2px;
+  background: linear-gradient(
+    45deg,
+    #f00,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #f00
+  );
+  background-size: 200%;
+  box-shadow: 0 4px 16px #0786ffbf;
+  animation: steam 4s linear infinite;
+}
+
+ion-checkbox {
+  --border-color: #ff7e18;
+  --background-checked: #ff7e18;
+  --border-color-checked: #ff7e18;
+}
+
+.no-ripple {
+  --ripple-color: transparent;
+}
+
+ion-toast {
+  --min-height: 20px;
+  --max-width: 500px;
+  --ion-safe-area-bottom: 80px;
+  @screen md {
+    --ion-safe-area-bottom: 10px;
+  }
+}
+
+ion-toast {
+  --ion-color-success: #0087ff;
+}

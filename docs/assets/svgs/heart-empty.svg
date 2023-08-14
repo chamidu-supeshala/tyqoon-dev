@@ -1,0 +1,16 @@
+<svg
+  id="heart-icon"
+  class="unclicked"
+  style="overflow: visible;"
+  viewBox="23.1401 23.1401 20 20"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <path
+    id="heart-outline"
+    fill="none"
+    stroke="#a3acd0"
+    stroke-linejoin="round"
+    stroke-width="1.4"
+    d="M32.7113,38.4768c-1.0659-.8848-4.31-3.58-5.5083-4.9048a3.6505,3.6505,0,0,1,.002-5.0737,3.5919,3.5919,0,0,1,5.0684,0l.85.85.8818-.85a3.5776,3.5776,0,0,1,5.0693.0019,3.6454,3.6454,0,0,1,.0039,5.0689,71.9578,71.9578,0,0,1-5.51,4.9072l-.4287.3564Z" />
+</svg>

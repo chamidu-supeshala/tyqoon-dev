@@ -1,0 +1,143 @@
+@keyframes backgroundFlow {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: -50% center;
+  }
+  50%, 100% {
+    background-position: -250% center;
+  }
+}
+
+@keyframes pulsateAnimation{
+  from {opacity: 0.1;}
+  25% {opacity: 0.2;}
+  50% {opacity: 0.1;}
+  to {opacity: 0.1}
+}
+
+@keyframes orangeLoaderSpinMove {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes orangeLoaderRotate {
+  to {
+    transform: rotate(405deg);
+  }
+}
+
+@keyframes orange-jump {
+  0%,
+  15%,
+  35%,
+  100% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translate(5px, -10px) rotate(5deg);
+  }
+}
+
+@keyframes white-jump {
+  0%,
+  15%,
+  35%,
+  100% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translate(-5px, -10px) rotate(-2deg);
+  }
+}
+
+@keyframes steam {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+@keyframes categoryOpacity {
+  0% {
+    opacity: 0;
+    background-color: #fff0;
+  }
+  100% {
+    opacity: 1;
+    background-color: #fffffffa;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate(-25%, 0);
+    transform: translate(-25%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes loader-2-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-2-3 {
+	0%   { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+@keyframes blue-pulse {
+  0% {
+    box-shadow: 0 0 0 0 #40b7ff;
+  }
+  100% {
+    box-shadow: 0 0 0 10px #fbb32f01;
+  }
+}
