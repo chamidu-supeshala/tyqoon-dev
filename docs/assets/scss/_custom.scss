@@ -32,3 +32,11 @@
 app-dollar-jumping ::ng-deep svg {
   width: 100%;
 }
+
+ng-scrollbar {
+  --scrollbar-size: 3px !important;
+}
+
+ng-scrollbar[scrollShadow] {
+  overflow: hidden;
+}
