@@ -135,7 +135,7 @@
 
 @keyframes blue-pulse {
   0% {
-    box-shadow: 0 0 0 0 #40b7ff;
+    box-shadow: 0 0 0 0 var(--color-pulse, #40b7ff);
   }
   100% {
     box-shadow: 0 0 0 10px #fbb32f01;

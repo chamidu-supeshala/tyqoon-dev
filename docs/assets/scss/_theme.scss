@@ -53,6 +53,14 @@
     background: linear-gradient(135deg, #ff5c02 0%, #ff7e41 100%);
   }
 
+  .bg-gradient-secondary {
+    background: linear-gradient(270deg, rgb(254, 111, 252) 0%, rgb(128, 7, 250) 100%);
+  }
+
+  .bg-gradient-secondary-1 {
+    background: linear-gradient(135deg, rgb(254, 111, 252) 0%, rgb(128, 7, 250) 100%);
+  }
+
   .border-gradient-primary {
     @include gradient-border(
       linear-gradient(91.5deg, #fddc64 0.75%, #ff9e3d 51.47%, #fddc64 106.14%)
@@ -62,6 +70,12 @@
   .border-gradient-secondary {
     @include gradient-border(
       linear-gradient(91.5deg, #ff05c9 0.75%, #00aeff 51.47%, #ff05c9 106.14%)
+    );
+  }
+
+  .border-gradient-purple {
+    @include gradient-border(
+      linear-gradient(70deg, rgb(83, 0, 254) 0%, rgb(252, 161, 255) 100%)
     );
   }
 
