@@ -63,6 +63,15 @@
 }
 
 
+.fade-in-from-top-left {
+  opacity: 0;
+  animation-timing-function: ease-in;
+  animation: fade-in-from-top-left var(--duration, 0.8s);
+  animation-delay: var(--delay, 0s);
+  animation-fill-mode: forwards;
+}
+
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -114,5 +123,17 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+
+@keyframes fade-in-from-top-left {
+  0% {
+    opacity: 0;
+    transform: translateY(var(--distance, -100px)) translateX(var(--distance, -100px));
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
   }
 }
