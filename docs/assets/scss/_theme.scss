@@ -246,3 +246,36 @@ ion-toast {
 ion-toast {
   --ion-color-success: #0087ff;
 }
+
+
+
+ion-content {
+  &::part(background) {
+    background-color: var(--bgColor);
+  }
+}
+
+ion-toolbar {
+  --background: var(--bgSecondaryColor);
+  .tyqoon-container {
+    background-color: var(--bgSecondaryColor);
+  }
+}
+
+.text-main {
+  color: var(--textColor) !important;
+}
+
+body {
+  &.light-mode {
+    
+  }
+
+  &.dark-mode {
+    color: var(--textColor);
+
+    a:not(:hover) {
+      color: var(--textColor);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+$bgColorLight: #ffffff;
+$bgSecondaryColorLight: #ffffff;
+$bgTertiaryColorLight: #f3f3f3;
+$bgPanelColorLight: #ffffff;
+$textColorLight: #000000;
+$primaryColorLight: #3699ff;
+$borderColorLight: #cbd5e1; // border-slate-300
+
+$bgColorDark: #292e39;//#3f3f3f;//#313339;
+$bgSecondaryColorDark: #293140; //#313742;//#2f384a; //#2d333f;//#2b2d31;//#1e1f22;
+$bgTertiaryColorDark: #292e39;
+$bgPanelColorDark: #2f384a;//#2f384a; //#2b2d31;
+$textColorDark: #cccccc; //#afafaf; //#8a8a8a;
+$primaryColorDark: #3699ff;
+$borderColorDark: #646a70; //#adb5bd;
+
+$bgPrimaryTransparent: rgba(255, 126, 24, .1);
+
+@mixin tyqoonLight() {
+  --bgColor: #{$bgColorLight};
+  --bgSecondaryColor: #{$bgSecondaryColorLight};
+  --bgTertiaryColor: #{$bgTertiaryColorLight};
+  --bgPanelColor: #{$bgPanelColorLight};
+  --textColor: #{$textColorLight};
+  --primaryColor: #{$primaryColorLight};
+  --borderColor: #{$borderColorLight};
+}
+
+@mixin tyqoonDark() {
+  --bgColor: #{$bgColorDark};
+  --bgSecondaryColor: #{$bgSecondaryColorDark};
+  --bgTertiaryColor: #{$bgTertiaryColorDark};
+  --bgPanelColor: #{$bgPanelColorDark};
+  --textColor: #{$textColorDark};
+  --primaryColor: #{$primaryColorDark};
+  --borderColor: #{$borderColorDark};
+}
+
+@mixin tyqoonCommon() {
+  --bgPrimaryTransparent: #{$bgPrimaryTransparent};
+}
