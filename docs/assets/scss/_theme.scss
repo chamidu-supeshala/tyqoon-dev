@@ -262,19 +262,22 @@ ion-toolbar {
   }
 }
 
-.text-main {
-  color: var(--textColor) !important;
+.text-strong {
+  color: var(--textColor);
 }
 
 body {
   &.light-mode {
-    
+    .text-main {
+      color: #000000d9;
+    }
   }
 
   &.dark-mode {
     color: var(--textColor);
 
-    a:not(:hover) {
+    a:not(:hover),
+    .text-main {
       color: var(--textColor);
     }
   }
